@@ -24,6 +24,12 @@ describe Solver do
     it 'should return  120 if factorial method take 5 ' do
      expect(@solver.factorial(5)).to eql(120)
     end
+   end
+
+   context '#reverse method check' do
+    it "Should return the reversed string of hello -> olleh" do
+      expect(@solver.reverse('hello')).to eql('olleh')
+    end
 
    end
 
