@@ -14,17 +14,18 @@ describe Solver do
       expect(@solver.factorial(1)).to eql(1)
     end
     it 'should raise an error if argument is negative' do
-       expect { @solver.factorial(-1) }.to raise_error(ArgumentError)   end
+      expect { @solver.factorial(-1) }.to raise_error(ArgumentError)
+    end
     it 'should return  120 if factorial method take 5 ' do
       expect(@solver.factorial(5)).to eql(120)
     end
   end
 
-  # context '#reverse method check' do
-  #   it 'Should return the reversed string of hello -> olleh' do
-  #     expect(@solver.reverse('hello')).to eql('olleh')
-  #   end
-  # end
+  context '#reverse method check' do
+    it 'Should return the reversed string of hello -> olleh' do
+      expect(@solver.reverse('hello')).to eql('olleh')
+    end
+  end
 
   # context '#fizzbuzz method check' do
   #   it "Should return 'fizz' if argument is divisible by 3 and not by 5" do
