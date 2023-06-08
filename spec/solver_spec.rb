@@ -27,18 +27,18 @@ describe Solver do
     end
   end
 
-  # context '#fizzbuzz method check' do
-  #   it "Should return 'fizz' if argument is divisible by 3 and not by 5" do
-  #     expect(@solver.fizzbuzz(6)).to eql('fizz')
-  #   end
-  #   it "Should return 'buzz' if argument is divisible by 5 and not by 3" do
-  #     expect(@solver.fizzbuzz(10)).to eql('buzz')
-  #   end
-  #   it "Should return 'fizzbuzz' if argument is divisible by 3 and by 5" do
-  #     expect(@solver.fizzbuzz(15)).to eql('fizzbuzz')
-  #   end
-  #   it 'Should return string of argument if argument is not divisible by 3 and by 5' do
-  #     expect(@solver.fizzbuzz(7)).to eql('7')
-  #   end
-  # end
+  context '#fizzbuzz method check' do
+    it "Should return 'fizz' if argument is divisible by 3 and not by 5" do
+      expect(@solver.fizzbuzz(6)).to eql('fizz')
+    end
+    it "Should return 'buzz' if argument is divisible by 5 and not by 3" do
+      expect(@solver.fizzbuzz(10)).to eql('buzz')
+    end
+    it "Should return 'fizzbuzz' if argument is divisible by 3 and by 5" do
+      expect(@solver.fizzbuzz(15)).to eql('fizzbuzz')
+    end
+    it 'Should return string of argument if argument is not divisible by 3 and by 5' do
+      expect(@solver.fizzbuzz(7)).to eql('7')
+    end
+  end
 end
